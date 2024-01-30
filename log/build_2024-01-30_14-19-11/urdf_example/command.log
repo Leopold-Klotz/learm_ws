@@ -1,0 +1,2 @@
+Invoking command in '/home/leok/learm_ws/build/urdf_example': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/leok/learm_ws/build/urdf_example -- -j6 -l6
+Invoked command in '/home/leok/learm_ws/build/urdf_example' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/leok/learm_ws/build/urdf_example -- -j6 -l6
