@@ -73,20 +73,20 @@
 
     <link name="arm_one">
         <visual>
-            <origin xyz="0 6.8 7" rpy="0 0 0"/>
+            <origin xyz="0 1.5 7" rpy="0 0 0"/>
             <geometry>
                 <box size="5.5 3 13" />
             </geometry>
             <material name="blue" />
         </visual>
         <collision>
-            <origin xyz="0 6.8 7" rpy="0 0 0"/>
+            <origin xyz="0 1.5 7" rpy="0 0 0"/>
             <geometry>
                 <box size="5.5 3 13" />
             </geometry>
         </collision>
         <xacro:inertial_box mass="200" x="5.5" y="3" z="13">
-            <origin xyz="0 6.8 7" rpy="0 0 0"/>
+            <origin xyz="0 1.5 7" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
 
@@ -96,11 +96,11 @@
     <!-- - The axis of rotation is -1 in Y, so that positive is "up" -->
     <!-- - The upper limit uses xacro's mathematical features -->
     <joint name="arm_joint" type="revolute">
-        <origin xyz="0.25 0 0.15" rpy="0 0 0"/>
+        <origin xyz="0 1.5 13" rpy="0 0 0"/>
         <parent link="arm_one"/>
-        <child link="arm_link"/>
-        <axis xyz="0 -1 0"/>
-        <limit lower="0" upper="${pi/2}" velocity="100" effort="100"/> 
+        <child link="arm_two"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="${-pi/2}" upper="${pi/2}" velocity="100" effort="100"/> 
     </joint>
 
 
@@ -109,35 +109,38 @@
     <!-- - The visual/collision origin is set to halfway along the length (similar to the box), but also with a rotation (again using the mathematical features). -->
     <!--   This is because the cylinder extends along the Z axis by default, but we want it to be along the X axis (when the joint is at 0) -->
 
-    <xacro:property name="arm_length" value="1" />
-    <xacro:property name="arm_radius" value="0.1" />
-    <link name="arm_link">
+    <xacro:property name="arm_length" value="11" />
+    <xacro:property name="arm_radius" value="2.75" />
+
+    <link name="arm_two">
         <visual>
-            <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi/2} 0"/>
-            <geometry>                
-                <cylinder length="${arm_length}" radius="${arm_radius}" />
+            <origin xyz="0 0 5.5" rpy="0 0 0"/>
+            <geometry>
+                <box size="5.5 3 11" />
             </geometry>
-            <material name="orange" />
+            <material name="blue" />
         </visual>
         <collision>
-            <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi/2} 0"/>
+            <origin xyz="0 0 5.5" rpy="0 0 0"/>
             <geometry>
-                <cylinder length="${arm_length}" radius="${arm_radius}" />
+                <box size="5.5 3 11" />
             </geometry>
         </collision>
-        <xacro:inertial_cylinder mass="1.0" length="${arm_length}" radius="${arm_radius}">
-            <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi/2} 0"/>
-        </xacro:inertial_cylinder>
+        <xacro:inertial_box mass="200" x="5.5" y="3" z="11">
+            <origin xyz="0 0 5.5" rpy="0 0 0"/>
+        </xacro:inertial_box>
     </link>
 
 
     <!-- camera_joint describes where the camera is relative to the arm -->
     <!-- - Even though the camera isn't moving relative to the arm, it will probably be helpful to have its own link/frame rather than just adding more visuals to the arm -->
     <!-- - For this example, the camera_link origin will be at the centre of the camera's "sensor" -->
-    <joint name="camera_joint" type="fixed">
-        <origin xyz="${arm_length} 0 ${arm_radius + 0.075}" rpy="0 0 0"/>
-        <parent link="arm_link"/>
-        <child link="camera_link"/>        
+    <joint name="arm_joint2" type="revolute">
+        <origin xyz="0 1.5 13" rpy="0 0 0"/>
+        <parent link="arm_two"/>
+        <child link="camera_link"/>
+        <axis xyz="-1 0 0"/>
+        <limit lower="0" upper="${pi}" velocity="100" effort="100"/> 
     </joint>
 
 
