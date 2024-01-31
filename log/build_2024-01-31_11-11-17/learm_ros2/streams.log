@@ -1,0 +1,55 @@
+[0.405s] Invoking command in '/home/wsl-ubuntu/learm_ws/src/learm_ros2': PYTHONPATH=/home/wsl-ubuntu/learm_ws/build/learm_ros2/prefix_override:/home/wsl-ubuntu/learm_ws/install/learm_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learm_ros2 build --build-base /home/wsl-ubuntu/learm_ws/build/learm_ros2/build install --record /home/wsl-ubuntu/learm_ws/build/learm_ros2/install.log --single-version-externally-managed
+[0.504s] running egg_info
+[0.504s] creating ../../build/learm_ros2/learm_ros2.egg-info
+[0.509s] writing ../../build/learm_ros2/learm_ros2.egg-info/PKG-INFO
+[0.510s] writing dependency_links to ../../build/learm_ros2/learm_ros2.egg-info/dependency_links.txt
+[0.510s] writing entry points to ../../build/learm_ros2/learm_ros2.egg-info/entry_points.txt
+[0.510s] writing requirements to ../../build/learm_ros2/learm_ros2.egg-info/requires.txt
+[0.510s] writing top-level names to ../../build/learm_ros2/learm_ros2.egg-info/top_level.txt
+[0.510s] writing manifest file '../../build/learm_ros2/learm_ros2.egg-info/SOURCES.txt'
+[0.522s] reading manifest file '../../build/learm_ros2/learm_ros2.egg-info/SOURCES.txt'
+[0.522s] writing manifest file '../../build/learm_ros2/learm_ros2.egg-info/SOURCES.txt'
+[0.522s] running build
+[0.523s] running build_py
+[0.523s] creating /home/wsl-ubuntu/learm_ws/build/learm_ros2/build
+[0.523s] creating /home/wsl-ubuntu/learm_ws/build/learm_ros2/build/lib
+[0.523s] creating /home/wsl-ubuntu/learm_ws/build/learm_ros2/build/lib/learm_ros2
+[0.523s] copying learm_ros2/__init__.py -> /home/wsl-ubuntu/learm_ws/build/learm_ros2/build/lib/learm_ros2
+[0.523s] copying learm_ros2/follower.py -> /home/wsl-ubuntu/learm_ws/build/learm_ros2/build/lib/learm_ros2
+[0.523s] running install
+[0.523s] /home/wsl-ubuntu/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[0.524s] !!
+[0.524s] 
+[0.524s]         ********************************************************************************
+[0.524s]         Please avoid running ``setup.py`` directly.
+[0.524s]         Instead, use pypa/build, pypa/installer or other
+[0.524s]         standards-based tools.
+[0.524s] 
+[0.524s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[0.524s]         ********************************************************************************
+[0.524s] 
+[0.524s] !!
+[0.524s]   self.initialize_options()
+[0.526s] running install_lib
+[0.533s] creating /home/wsl-ubuntu/learm_ws/install/learm_ros2/lib/python3.10/site-packages/learm_ros2
+[0.533s] copying /home/wsl-ubuntu/learm_ws/build/learm_ros2/build/lib/learm_ros2/__init__.py -> /home/wsl-ubuntu/learm_ws/install/learm_ros2/lib/python3.10/site-packages/learm_ros2
+[0.533s] copying /home/wsl-ubuntu/learm_ws/build/learm_ros2/build/lib/learm_ros2/follower.py -> /home/wsl-ubuntu/learm_ws/install/learm_ros2/lib/python3.10/site-packages/learm_ros2
+[0.534s] byte-compiling /home/wsl-ubuntu/learm_ws/install/learm_ros2/lib/python3.10/site-packages/learm_ros2/__init__.py to __init__.cpython-310.pyc
+[0.534s] byte-compiling /home/wsl-ubuntu/learm_ws/install/learm_ros2/lib/python3.10/site-packages/learm_ros2/follower.py to follower.cpython-310.pyc
+[0.534s] running install_data
+[0.540s] creating /home/wsl-ubuntu/learm_ws/install/learm_ros2/share/ament_index
+[0.540s] creating /home/wsl-ubuntu/learm_ws/install/learm_ros2/share/ament_index/resource_index
+[0.540s] creating /home/wsl-ubuntu/learm_ws/install/learm_ros2/share/ament_index/resource_index/packages
+[0.541s] copying resource/learm_ros2 -> /home/wsl-ubuntu/learm_ws/install/learm_ros2/share/ament_index/resource_index/packages
+[0.541s] copying package.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2/share/learm_ros2
+[0.541s] creating /home/wsl-ubuntu/learm_ws/install/learm_ros2/share/learm_ros2/launch
+[0.541s] copying launch/run.launch.py -> /home/wsl-ubuntu/learm_ws/install/learm_ros2/share/learm_ros2/launch
+[0.541s] copying launch/learm_moveit_mode1.launch.py -> /home/wsl-ubuntu/learm_ws/install/learm_ros2/share/learm_ros2/launch
+[0.541s] copying launch/follower.launch.py -> /home/wsl-ubuntu/learm_ws/install/learm_ros2/share/learm_ros2/launch
+[0.541s] copying launch/learm_moveit.launch.py -> /home/wsl-ubuntu/learm_ws/install/learm_ros2/share/learm_ros2/launch
+[0.541s] running install_egg_info
+[0.547s] Copying ../../build/learm_ros2/learm_ros2.egg-info to /home/wsl-ubuntu/learm_ws/install/learm_ros2/lib/python3.10/site-packages/learm_ros2-0.0.0-py3.10.egg-info
+[0.548s] running install_scripts
+[0.607s] Installing follower script to /home/wsl-ubuntu/learm_ws/install/learm_ros2/lib/learm_ros2
+[0.607s] writing list of installed files to '/home/wsl-ubuntu/learm_ws/build/learm_ros2/install.log'
+[0.620s] Invoked command in '/home/wsl-ubuntu/learm_ws/src/learm_ros2' returned '0': PYTHONPATH=/home/wsl-ubuntu/learm_ws/build/learm_ros2/prefix_override:/home/wsl-ubuntu/learm_ws/install/learm_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learm_ros2 build --build-base /home/wsl-ubuntu/learm_ws/build/learm_ros2/build install --record /home/wsl-ubuntu/learm_ws/build/learm_ros2/install.log --single-version-externally-managed

@@ -1,0 +1,62 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wsl-ubuntu/learm_ws/build/learm_ros2_description
+-- Install configuration: ""
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/config
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/config/controllers.yaml
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/config/kinematics.yaml
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/config/learm_servo.yaml
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/config/joint_limits.yaml
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/config/ros_controllers.yaml
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/config/fake_controllers.yaml
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/config/ompl_planning.yaml
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/meshes
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/meshes/carpal-right.stl
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/meshes/hand.stl
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/meshes/tendon.stl
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/meshes/carpal-left.stl
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/meshes/finger.stl
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/meshes/forearm.stl
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/meshes/README.md
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/meshes/base.stl
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/meshes/shoulder.stl
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/meshes/wrist.stl
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/meshes/humerus.stl
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/rviz
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/rviz/view_robot.rviz
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/rviz/learm.rviz
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/srdf
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/srdf/learm.srdf.xacro
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/srdf/learm.srdf
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/urdf
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/urdf/learm.urdf.xacro
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/urdf/learm.urdf
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/ament_index/resource_index/package_run_dependencies/learm_ros2_description
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/ament_index/resource_index/parent_prefix_path/learm_ros2_description
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/environment/ament_prefix_path.sh
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/environment/ament_prefix_path.dsv
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/environment/path.sh
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/environment/path.dsv
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/local_setup.bash
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/local_setup.sh
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/local_setup.zsh
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/local_setup.dsv
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/package.dsv
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/ament_index/resource_index/packages/learm_ros2_description
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/cmake/learm_ros2_descriptionConfig.cmake
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/cmake/learm_ros2_descriptionConfig-version.cmake
+-- Installing: /home/wsl-ubuntu/learm_ws/install/learm_ros2_description/share/learm_ros2_description/package.xml

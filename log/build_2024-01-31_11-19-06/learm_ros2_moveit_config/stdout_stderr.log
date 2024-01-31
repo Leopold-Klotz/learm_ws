@@ -1,0 +1,68 @@
+running egg_info
+writing ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/PKG-INFO
+writing dependency_links to ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/dependency_links.txt
+writing requirements to ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/requires.txt
+writing top-level names to ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/top_level.txt
+reading manifest file '../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/SOURCES.txt'
+writing manifest file '../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/SOURCES.txt'
+running build
+running build_py
+copying learm_ros2_moveit_config/__init__.py -> /home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/build/lib/learm_ros2_moveit_config
+running install
+/home/wsl-ubuntu/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running install_lib
+running install_data
+copying resource/learm_ros2_moveit_config -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/ament_index/resource_index/packages
+copying package.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config
+copying launch/planning_context.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/default_warehouse_db.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/demo.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/demo_gazebo.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/warehouse_settings.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/run_benchmark_ompl.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/LeArm_moveit_sensor_manager.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/ompl-chomp_planning_pipeline.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/setup_assistant.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/warehouse.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/ompl_planning_pipeline.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/stomp_planning_pipeline.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/pilz_industrial_motion_planner_planning_pipeline.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/simple_moveit_controller_manager.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/moveit.rviz -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/chomp_planning_pipeline.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/joystick_control.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/ros_control_moveit_controller_manager.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/move_group.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/fake_moveit_controller_manager.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/ros_controllers.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/demo2.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/gazebo.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/moveit_rviz.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/planning_pipeline.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/sensor_manager.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/demo2.launch.py -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying launch/trajectory_execution.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+copying config/chomp_planning.yaml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+copying config/gazebo_controllers.yaml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+copying config/simple_moveit_controllers.yaml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+copying config/cartesian_limits.yaml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+copying config/sensors_3d.yaml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+copying config/LeArm.srdf -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+copying config/stomp_planning.yaml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+running install_egg_info
+removing '/home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/lib/python3.10/site-packages/learm_ros2_moveit_config-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info to /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/lib/python3.10/site-packages/learm_ros2_moveit_config-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/install.log'

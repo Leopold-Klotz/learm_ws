@@ -1,0 +1,82 @@
+[0.430s] Invoking command in '/home/wsl-ubuntu/learm_ws/src/learm_ros2_moveit_config': AMENT_PREFIX_PATH=/home/wsl-ubuntu/learm_ws/install/learm_ros2:${AMENT_PREFIX_PATH} PYTHONPATH=/home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/prefix_override:/home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/lib/python3.10/site-packages:/home/wsl-ubuntu/learm_ws/install/learm_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learm_ros2_moveit_config build --build-base /home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/build install --record /home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/install.log --single-version-externally-managed
+[0.522s] running egg_info
+[0.523s] creating ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info
+[0.528s] writing ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/PKG-INFO
+[0.529s] writing dependency_links to ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/dependency_links.txt
+[0.529s] writing requirements to ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/requires.txt
+[0.529s] writing top-level names to ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/top_level.txt
+[0.529s] writing manifest file '../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/SOURCES.txt'
+[0.540s] reading manifest file '../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/SOURCES.txt'
+[0.541s] writing manifest file '../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/SOURCES.txt'
+[0.541s] running build
+[0.541s] running build_py
+[0.541s] creating /home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/build
+[0.541s] creating /home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/build/lib
+[0.541s] creating /home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/build/lib/learm_ros2_moveit_config
+[0.541s] copying learm_ros2_moveit_config/__init__.py -> /home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/build/lib/learm_ros2_moveit_config
+[0.542s] running install
+[0.542s] /home/wsl-ubuntu/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[0.542s] !!
+[0.542s] 
+[0.542s]         ********************************************************************************
+[0.542s]         Please avoid running ``setup.py`` directly.
+[0.542s]         Instead, use pypa/build, pypa/installer or other
+[0.542s]         standards-based tools.
+[0.542s] 
+[0.542s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[0.542s]         ********************************************************************************
+[0.542s] 
+[0.542s] !!
+[0.542s]   self.initialize_options()
+[0.544s] running install_lib
+[0.550s] creating /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/lib/python3.10/site-packages/learm_ros2_moveit_config
+[0.550s] copying /home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/build/lib/learm_ros2_moveit_config/__init__.py -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/lib/python3.10/site-packages/learm_ros2_moveit_config
+[0.551s] byte-compiling /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/lib/python3.10/site-packages/learm_ros2_moveit_config/__init__.py to __init__.cpython-310.pyc
+[0.551s] running install_data
+[0.556s] creating /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/ament_index
+[0.556s] creating /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/ament_index/resource_index
+[0.556s] creating /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/ament_index/resource_index/packages
+[0.557s] copying resource/learm_ros2_moveit_config -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/ament_index/resource_index/packages
+[0.557s] copying package.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config
+[0.557s] creating /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.557s] copying launch/planning_context.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.557s] copying launch/default_warehouse_db.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.557s] copying launch/demo.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.557s] copying launch/demo_gazebo.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.557s] copying launch/warehouse_settings.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.557s] copying launch/run_benchmark_ompl.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.558s] copying launch/LeArm_moveit_sensor_manager.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.558s] copying launch/ompl-chomp_planning_pipeline.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.558s] copying launch/setup_assistant.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.558s] copying launch/warehouse.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.558s] copying launch/ompl_planning_pipeline.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.558s] copying launch/stomp_planning_pipeline.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.558s] copying launch/pilz_industrial_motion_planner_planning_pipeline.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.559s] copying launch/simple_moveit_controller_manager.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.559s] copying launch/moveit.rviz -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.559s] copying launch/chomp_planning_pipeline.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.559s] copying launch/joystick_control.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.559s] copying launch/ros_control_moveit_controller_manager.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.559s] copying launch/move_group.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.559s] copying launch/fake_moveit_controller_manager.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.559s] copying launch/ros_controllers.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.560s] copying launch/demo2.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.560s] copying launch/gazebo.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.560s] copying launch/moveit_rviz.launch -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.560s] copying launch/planning_pipeline.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.560s] copying launch/sensor_manager.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.560s] copying launch/demo2.launch.py -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.560s] copying launch/trajectory_execution.launch.xml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/launch
+[0.561s] creating /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+[0.561s] copying config/chomp_planning.yaml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+[0.561s] copying config/gazebo_controllers.yaml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+[0.561s] copying config/simple_moveit_controllers.yaml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+[0.561s] copying config/cartesian_limits.yaml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+[0.561s] copying config/sensors_3d.yaml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+[0.561s] copying config/LeArm.srdf -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+[0.561s] copying config/stomp_planning.yaml -> /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/share/learm_ros2_moveit_config/config
+[0.561s] running install_egg_info
+[0.567s] Copying ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info to /home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/lib/python3.10/site-packages/learm_ros2_moveit_config-0.0.0-py3.10.egg-info
+[0.567s] running install_scripts
+[0.621s] writing list of installed files to '/home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/install.log'
+[0.633s] Invoked command in '/home/wsl-ubuntu/learm_ws/src/learm_ros2_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/wsl-ubuntu/learm_ws/install/learm_ros2:${AMENT_PREFIX_PATH} PYTHONPATH=/home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/prefix_override:/home/wsl-ubuntu/learm_ws/install/learm_ros2_moveit_config/lib/python3.10/site-packages:/home/wsl-ubuntu/learm_ws/install/learm_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learm_ros2_moveit_config build --build-base /home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/build install --record /home/wsl-ubuntu/learm_ws/build/learm_ros2_moveit_config/install.log --single-version-externally-managed

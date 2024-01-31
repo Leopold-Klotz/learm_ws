@@ -1,0 +1,2 @@
+[console_scripts]
+follower = learm_ros2.follower:main
