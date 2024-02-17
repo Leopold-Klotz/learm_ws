@@ -1,6 +1,0 @@
-[0.473s] Invoking command in '/home/lk/learm_ws/build/urdf_example': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lk/learm_ws/build/urdf_example -- -j12 -l12
-[0.490s] [0mCMake Error: The current CMakeCache.txt directory /home/lk/learm_ws/build/urdf_example/CMakeCache.txt is different than the directory /home/wsl-ubuntu/learm_ws/build/urdf_example where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0.502s] [0mCMake Error: The source directory "/home/wsl-ubuntu/learm_ws/src/urdf_example" does not exist.
-[0.502s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.504s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
-[0.506s] Invoked command in '/home/lk/learm_ws/build/urdf_example' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lk/learm_ws/build/urdf_example -- -j12 -l12

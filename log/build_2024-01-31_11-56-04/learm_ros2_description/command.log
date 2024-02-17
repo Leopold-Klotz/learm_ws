@@ -1,6 +1,0 @@
-Invoking command in '/home/lk/learm_ws/build/learm_ros2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lk/learm_ws/src/learm_ros2_description -DCMAKE_INSTALL_PREFIX=/home/lk/learm_ws/install/learm_ros2_description
-Invoked command in '/home/lk/learm_ws/build/learm_ros2_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lk/learm_ws/src/learm_ros2_description -DCMAKE_INSTALL_PREFIX=/home/lk/learm_ws/install/learm_ros2_description
-Invoking command in '/home/lk/learm_ws/build/learm_ros2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lk/learm_ws/build/learm_ros2_description -- -j12 -l12
-Invoked command in '/home/lk/learm_ws/build/learm_ros2_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lk/learm_ws/build/learm_ros2_description -- -j12 -l12
-Invoking command in '/home/lk/learm_ws/build/learm_ros2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lk/learm_ws/build/learm_ros2_description
-Invoked command in '/home/lk/learm_ws/build/learm_ros2_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lk/learm_ws/build/learm_ros2_description
