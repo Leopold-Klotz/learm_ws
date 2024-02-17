@@ -4,6 +4,11 @@ Credit:
 - learm_ros2, learm_ros2_description, and learm_ros2_moveit_config packages were all taken from Andrew Dassonville's learm_ros2 repository.
 - The learm_ros2 repository was used as a starting point for this project but has been modified and expanded upon.
 
+To build the project:
+    - cd learm_ws
+    - source /opt/ros/humble/setup.bash
+    - colcon build
+
 To run RVIZ with the model:
 # What this does:
 # 1. Launches RVIZ2 (with the config from learm_ros2_description)
