@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wsl-ubuntu/learm_ws/src/learm_ros2_description
+CMAKE_SOURCE_DIR = /home/lk/learm_ws/src/learm_ros2_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wsl-ubuntu/learm_ws/build/learm_ros2_description
+CMAKE_BINARY_DIR = /home/lk/learm_ws/build/learm_ros2_description
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/wsl-ubuntu/learm_ws/build/learm_ros2_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wsl-ubuntu/learm_ws/src/learm_ros2_description /home/wsl-ubuntu/learm_ws/src/learm_ros2_description /home/wsl-ubuntu/learm_ws/build/learm_ros2_description /home/wsl-ubuntu/learm_ws/build/learm_ros2_description /home/wsl-ubuntu/learm_ws/build/learm_ros2_description/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lk/learm_ws/build/learm_ros2_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lk/learm_ws/src/learm_ros2_description /home/lk/learm_ws/src/learm_ros2_description /home/lk/learm_ws/build/learm_ros2_description /home/lk/learm_ws/build/learm_ros2_description /home/lk/learm_ws/build/learm_ros2_description/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wsl-ubuntu/learm_ws/src/urdf_example
+CMAKE_SOURCE_DIR = /home/lk/learm_ws/src/urdf_example
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wsl-ubuntu/learm_ws/build/urdf_example
+CMAKE_BINARY_DIR = /home/lk/learm_ws/build/urdf_example
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/wsl-ubuntu/learm_ws/build/urdf_example && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wsl-ubuntu/learm_ws/src/urdf_example /home/wsl-ubuntu/learm_ws/src/urdf_example /home/wsl-ubuntu/learm_ws/build/urdf_example /home/wsl-ubuntu/learm_ws/build/urdf_example /home/wsl-ubuntu/learm_ws/build/urdf_example/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lk/learm_ws/build/urdf_example && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lk/learm_ws/src/urdf_example /home/lk/learm_ws/src/urdf_example /home/lk/learm_ws/build/urdf_example /home/lk/learm_ws/build/urdf_example /home/lk/learm_ws/build/urdf_example/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

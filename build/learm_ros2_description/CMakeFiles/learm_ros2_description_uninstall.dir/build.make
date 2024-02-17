@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wsl-ubuntu/learm_ws/src/learm_ros2_description
+CMAKE_SOURCE_DIR = /home/lk/learm_ws/src/learm_ros2_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wsl-ubuntu/learm_ws/build/learm_ros2_description
+CMAKE_BINARY_DIR = /home/lk/learm_ws/build/learm_ros2_description
 
 # Utility rule file for learm_ros2_description_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/learm_ros2_description_uninstall.dir/compiler_depend.make
 include CMakeFiles/learm_ros2_description_uninstall.dir/progress.make
 
 CMakeFiles/learm_ros2_description_uninstall:
-	/usr/bin/cmake -P /home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/lk/learm_ws/build/learm_ros2_description/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 learm_ros2_description_uninstall: CMakeFiles/learm_ros2_description_uninstall
 learm_ros2_description_uninstall: CMakeFiles/learm_ros2_description_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/learm_ros2_description_uninstall.dir/clean:
 .PHONY : CMakeFiles/learm_ros2_description_uninstall.dir/clean
 
 CMakeFiles/learm_ros2_description_uninstall.dir/depend:
-	cd /home/wsl-ubuntu/learm_ws/build/learm_ros2_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wsl-ubuntu/learm_ws/src/learm_ros2_description /home/wsl-ubuntu/learm_ws/src/learm_ros2_description /home/wsl-ubuntu/learm_ws/build/learm_ros2_description /home/wsl-ubuntu/learm_ws/build/learm_ros2_description /home/wsl-ubuntu/learm_ws/build/learm_ros2_description/CMakeFiles/learm_ros2_description_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lk/learm_ws/build/learm_ros2_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lk/learm_ws/src/learm_ros2_description /home/lk/learm_ws/src/learm_ros2_description /home/lk/learm_ws/build/learm_ros2_description /home/lk/learm_ws/build/learm_ros2_description /home/lk/learm_ws/build/learm_ros2_description/CMakeFiles/learm_ros2_description_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/learm_ros2_description_uninstall.dir/depend
 

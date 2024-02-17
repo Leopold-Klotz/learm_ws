@@ -1,0 +1,2 @@
+Invoking command in '/home/lk/learm_ws/build/learm_ros2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lk/learm_ws/build/learm_ros2_description -- -j12 -l12
+Invoked command in '/home/lk/learm_ws/build/learm_ros2_description' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lk/learm_ws/build/learm_ros2_description -- -j12 -l12

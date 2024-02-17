@@ -1,0 +1,44 @@
+[0.703s] Invoking command in '/home/lk/learm_ws/src/learm_ros2': PYTHONPATH=/home/lk/learm_ws/build/learm_ros2/prefix_override:/home/lk/learm_ws/install/learm_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learm_ros2 build --build-base /home/lk/learm_ws/build/learm_ros2/build install --record /home/lk/learm_ws/build/learm_ros2/install.log --single-version-externally-managed
+[0.928s] running egg_info
+[0.929s] creating ../../build/learm_ros2/learm_ros2.egg-info
+[0.929s] writing ../../build/learm_ros2/learm_ros2.egg-info/PKG-INFO
+[0.929s] writing dependency_links to ../../build/learm_ros2/learm_ros2.egg-info/dependency_links.txt
+[0.929s] writing entry points to ../../build/learm_ros2/learm_ros2.egg-info/entry_points.txt
+[0.929s] writing requirements to ../../build/learm_ros2/learm_ros2.egg-info/requires.txt
+[0.929s] writing top-level names to ../../build/learm_ros2/learm_ros2.egg-info/top_level.txt
+[0.929s] writing manifest file '../../build/learm_ros2/learm_ros2.egg-info/SOURCES.txt'
+[0.931s] reading manifest file '../../build/learm_ros2/learm_ros2.egg-info/SOURCES.txt'
+[0.932s] writing manifest file '../../build/learm_ros2/learm_ros2.egg-info/SOURCES.txt'
+[0.932s] running build
+[0.932s] running build_py
+[0.932s] creating /home/lk/learm_ws/build/learm_ros2/build
+[0.932s] creating /home/lk/learm_ws/build/learm_ros2/build/lib
+[0.933s] creating /home/lk/learm_ws/build/learm_ros2/build/lib/learm_ros2
+[0.933s] copying learm_ros2/__init__.py -> /home/lk/learm_ws/build/learm_ros2/build/lib/learm_ros2
+[0.933s] copying learm_ros2/follower.py -> /home/lk/learm_ws/build/learm_ros2/build/lib/learm_ros2
+[0.933s] running install
+[0.933s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.933s]   warnings.warn(
+[0.933s] running install_lib
+[0.936s] creating /home/lk/learm_ws/install/learm_ros2/lib/python3.10/site-packages/learm_ros2
+[0.936s] copying /home/lk/learm_ws/build/learm_ros2/build/lib/learm_ros2/__init__.py -> /home/lk/learm_ws/install/learm_ros2/lib/python3.10/site-packages/learm_ros2
+[0.936s] copying /home/lk/learm_ws/build/learm_ros2/build/lib/learm_ros2/follower.py -> /home/lk/learm_ws/install/learm_ros2/lib/python3.10/site-packages/learm_ros2
+[0.936s] byte-compiling /home/lk/learm_ws/install/learm_ros2/lib/python3.10/site-packages/learm_ros2/__init__.py to __init__.cpython-310.pyc
+[0.937s] byte-compiling /home/lk/learm_ws/install/learm_ros2/lib/python3.10/site-packages/learm_ros2/follower.py to follower.cpython-310.pyc
+[0.937s] running install_data
+[0.937s] creating /home/lk/learm_ws/install/learm_ros2/share/ament_index
+[0.937s] creating /home/lk/learm_ws/install/learm_ros2/share/ament_index/resource_index
+[0.937s] creating /home/lk/learm_ws/install/learm_ros2/share/ament_index/resource_index/packages
+[0.937s] copying resource/learm_ros2 -> /home/lk/learm_ws/install/learm_ros2/share/ament_index/resource_index/packages
+[0.937s] copying package.xml -> /home/lk/learm_ws/install/learm_ros2/share/learm_ros2
+[0.938s] creating /home/lk/learm_ws/install/learm_ros2/share/learm_ros2/launch
+[0.938s] copying launch/learm_moveit.launch.py -> /home/lk/learm_ws/install/learm_ros2/share/learm_ros2/launch
+[0.938s] copying launch/run.launch.py -> /home/lk/learm_ws/install/learm_ros2/share/learm_ros2/launch
+[0.938s] copying launch/follower.launch.py -> /home/lk/learm_ws/install/learm_ros2/share/learm_ros2/launch
+[0.938s] copying launch/learm_moveit_mode1.launch.py -> /home/lk/learm_ws/install/learm_ros2/share/learm_ros2/launch
+[0.938s] running install_egg_info
+[0.939s] Copying ../../build/learm_ros2/learm_ros2.egg-info to /home/lk/learm_ws/install/learm_ros2/lib/python3.10/site-packages/learm_ros2-0.0.0-py3.10.egg-info
+[0.940s] running install_scripts
+[0.958s] Installing follower script to /home/lk/learm_ws/install/learm_ros2/lib/learm_ros2
+[0.958s] writing list of installed files to '/home/lk/learm_ws/build/learm_ros2/install.log'
+[0.983s] Invoked command in '/home/lk/learm_ws/src/learm_ros2' returned '0': PYTHONPATH=/home/lk/learm_ws/build/learm_ros2/prefix_override:/home/lk/learm_ws/install/learm_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/learm_ros2 build --build-base /home/lk/learm_ws/build/learm_ros2/build install --record /home/lk/learm_ws/build/learm_ros2/install.log --single-version-externally-managed

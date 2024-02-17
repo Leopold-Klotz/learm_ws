@@ -4,6 +4,7 @@ setup.py
 ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/PKG-INFO
 ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/SOURCES.txt
 ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/dependency_links.txt
+../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/entry_points.txt
 ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/requires.txt
 ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/top_level.txt
 ../../build/learm_ros2_moveit_config/learm_ros2_moveit_config.egg-info/zip-safe

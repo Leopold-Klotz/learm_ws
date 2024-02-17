@@ -1,8 +1,8 @@
-# Install script for directory: /home/wsl-ubuntu/learm_ws/src/learm_ros2_description
+# Install script for directory: /home/lk/learm_ws/src/learm_ros2_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/wsl-ubuntu/learm_ws/install/learm_ros2_description")
+  set(CMAKE_INSTALL_PREFIX "/home/lk/learm_ws/install/learm_ros2_description")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,20 +44,20 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE DIRECTORY FILES
-    "/home/wsl-ubuntu/learm_ws/src/learm_ros2_description/config"
-    "/home/wsl-ubuntu/learm_ws/src/learm_ros2_description/meshes"
-    "/home/wsl-ubuntu/learm_ws/src/learm_ros2_description/rviz"
-    "/home/wsl-ubuntu/learm_ws/src/learm_ros2_description/srdf"
-    "/home/wsl-ubuntu/learm_ws/src/learm_ros2_description/urdf"
+    "/home/lk/learm_ws/src/learm_ros2_description/config"
+    "/home/lk/learm_ws/src/learm_ros2_description/meshes"
+    "/home/lk/learm_ws/src/learm_ros2_description/rviz"
+    "/home/lk/learm_ws/src/learm_ros2_description/srdf"
+    "/home/lk/learm_ws/src/learm_ros2_description/urdf"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/learm_ros2_description")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/lk/learm_ws/build/learm_ros2_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/learm_ros2_description")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/learm_ros2_description")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/lk/learm_ws/build/learm_ros2_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/learm_ros2_description")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -65,7 +65,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description/environment" TYPE FILE FILES "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description/environment" TYPE FILE FILES "/home/lk/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -73,42 +73,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description/environment" TYPE FILE FILES "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description/environment" TYPE FILE FILES "/home/lk/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE FILE FILES "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE FILE FILES "/home/lk/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE FILE FILES "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE FILE FILES "/home/lk/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE FILE FILES "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE FILE FILES "/home/lk/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE FILE FILES "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE FILE FILES "/home/lk/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE FILE FILES "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE FILE FILES "/home/lk/learm_ws/build/learm_ros2_description/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_index/share/ament_index/resource_index/packages/learm_ros2_description")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/lk/learm_ws/build/learm_ros2_description/ament_cmake_index/share/ament_index/resource_index/packages/learm_ros2_description")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description/cmake" TYPE FILE FILES
-    "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_core/learm_ros2_descriptionConfig.cmake"
-    "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/ament_cmake_core/learm_ros2_descriptionConfig-version.cmake"
+    "/home/lk/learm_ws/build/learm_ros2_description/ament_cmake_core/learm_ros2_descriptionConfig.cmake"
+    "/home/lk/learm_ws/build/learm_ros2_description/ament_cmake_core/learm_ros2_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE FILE FILES "/home/wsl-ubuntu/learm_ws/src/learm_ros2_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/learm_ros2_description" TYPE FILE FILES "/home/lk/learm_ws/src/learm_ros2_description/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -119,5 +119,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wsl-ubuntu/learm_ws/build/learm_ros2_description/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lk/learm_ws/build/learm_ros2_description/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
