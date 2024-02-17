@@ -1,41 +1,17 @@
 Panels:
   - Class: rviz_common/Displays
-    Help Height: 138
     Name: Displays
-    Property Tree Widget:
-      Expanded: ~
-      Splitter Ratio: 0.5
-    Tree Height: 836
   - Class: rviz_common/Views
-    Expanded:
-      - /Current View1
     Name: Views
-    Splitter Ratio: 0.5
 Visualization Manager:
-  Class: ""
   Displays:
-    - Alpha: 0.5
-      Cell Size: 1
-      Class: rviz_default_plugins/Grid
-      Color: 160; 160; 164
-      Enabled: true
-      Line Style:
-        Line Width: 0.029999999329447746
-        Value: Lines
+    - Class: rviz_default_plugins/Grid
       Name: Grid
-      Normal Cell Count: 0
-      Offset:
-        X: 0
-        Y: 0
-        Z: 0
-      Plane: XY
-      Plane Cell Count: 10
-      Reference Frame: <Fixed Frame>
       Value: true
-    - Alpha: 0.800000011920929
-      Class: rviz_default_plugins/RobotModel
-      Collision Enabled: false
-      Description File: ""
+    - Class: rviz_default_plugins/RobotModel
+      Alpha: 0.8
+      Name: RobotModel
+      # Robot Description: robot_description
       Description Source: Topic
       Description Topic:
         Depth: 5
@@ -43,178 +19,27 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /robot_description
-      Enabled: true
-      Links:
-        All Links Enabled: true
-        Expand Joint Details: false
-        Expand Link Details: false
-        Expand Tree: false
-        Link Tree Style: Links in Alphabetic Order
-        base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        finger_left_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        finger_right_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        forearm_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        grip_left_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        grip_right_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        hand_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        humerus_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        shoulder_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        tendon_left_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        tendon_right_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wrist_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-      Mass Properties:
-        Inertia: false
-        Mass: false
-      Name: RobotModel
-      TF Prefix: ""
-      Update Interval: 0
       Value: true
-      Visual Enabled: true
     - Class: rviz_default_plugins/TF
-      Enabled: true
-      Frame Timeout: 15
-      Frames:
-        All Enabled: true
-        base_link:
-          Value: true
-        finger_left_link:
-          Value: true
-        finger_right_link:
-          Value: true
-        forearm_link:
-          Value: true
-        grip_left_link:
-          Value: true
-        grip_right_link:
-          Value: true
-        hand_link:
-          Value: true
-        humerus_link:
-          Value: true
-        shoulder_link:
-          Value: true
-        tendon_left_link:
-          Value: true
-        tendon_right_link:
-          Value: true
-        wrist_link:
-          Value: true
-      Marker Scale: 1
       Name: TF
-      Show Arrows: false
-      Show Axes: false
-      Show Names: false
-      Tree:
-        base_link:
-          shoulder_link:
-            humerus_link:
-              forearm_link:
-                wrist_link:
-                  hand_link:
-                    grip_left_link:
-                      finger_left_link:
-                        {}
-                    grip_right_link:
-                      finger_right_link:
-                        {}
-                    tendon_left_link:
-                      {}
-                    tendon_right_link:
-                      {}
-      Update Interval: 0
       Value: true
-  Enabled: true
+      Show Axes: false
+      Show Arrows: false
   Global Options:
-    Background Color: 48; 48; 48
     Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:
     - Class: rviz_default_plugins/MoveCamera
-  Transformation:
-    Current:
-      Class: rviz_default_plugins/TF
   Value: true
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 1.0278656482696533
-      Enable Stereo Rendering:
-        Stereo Eye Separation: 0.05999999865889549
-        Stereo Focal Distance: 1
-        Swap Stereo Eyes: false
-        Value: false
-      Focal Point:
-        X: -0.04551509767770767
-        Y: 0.10260739177465439
-        Z: 0.16966180503368378
-      Focal Shape Fixed Size: true
-      Focal Shape Size: 0.05000000074505806
-      Invert Z Axis: false
+      Distance: 1.7
       Name: Current View
-      Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4450000524520874
-      Target Frame: <Fixed Frame>
+      Pitch: 0.33
       Value: Orbit (rviz)
-      Yaw: 5.334999084472656
-    Saved: ~
+      Yaw: 5.5
 Window Geometry:
-  Displays:
-    collapsed: false
-  Height: 2112
-  Hide Left Dock: false
-  Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd000000010000000000000316000007a4fc0200000002fb000000100044006900730070006c006100790073010000006e0000043c0000018200fffffffb0000000a0056006900650077007301000004b60000035c0000013200ffffff00000a32000007a400000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
-  Views:
-    collapsed: false
-  Width: 3412
-  X: 172
-  Y: 54
+  Height: 800
+  Width: 1200
