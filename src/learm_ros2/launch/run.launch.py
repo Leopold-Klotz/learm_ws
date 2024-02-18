@@ -11,7 +11,7 @@ def generate_launch_description():
     
     rviz_config = os.path.join(
         get_package_share_directory('learm_ros2_description'),
-        'rviz/hand_learm.rviz')
+        'rviz/learm.rviz')
 
     # urdf_path = os.path.join(
     #     get_package_share_directory('learm_ros2_description'),
