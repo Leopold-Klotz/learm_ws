@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: learm_ros2_description
+    relative_path: urdf/learm.urdf.xacro
+  srdf:
+    relative_path: config/learm.srdf
+  package_settings:
+    author_name: Leo Klotz
+    author_email: Klotzl@oregonstate.edu
+    generated_timestamp: 1708376542
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
