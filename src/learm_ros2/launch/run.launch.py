@@ -18,7 +18,7 @@ def generate_launch_description():
     #     'urdf/learm.urdf')
     urdf_path_xacro = os.path.join(
         get_package_share_directory('learm_ros2_description'),
-        'urdf/newLearm.urdf.xacro')
+        'urdf/scaledLearm.urdf.xacro')
     robot_desc = xacro.process_file(urdf_path_xacro).toxml()
     urdf_path = urdf_path_xacro
 
