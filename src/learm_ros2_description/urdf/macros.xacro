@@ -109,16 +109,8 @@
         <box size="${link_dims}" />
       </geometry>
     </collision>
-
-    <!-- Split the link_dims string into a list of numbers -->
-    <xacro:property name="dims_list" value="xacro:split(string(${link_dims}), ' ')" />
-
-    <!-- Extract individual components (x, y, z) -->
-    <xacro:property name="x" value="${dims_list[0]}" />
-    <xacro:property name="y" value="${dims_list[1]}" />
-    <xacro:property name="z" value="${dims_list[2]}" />
-
-    <xacro:inertial_box mass="${mass}" x="${x}" y="${y}" z="${z}">
+    
+    <xacro:inertial_box mass="${mass}" x="${link_dims[0]}" y="${link_dims[1]}" z="${link_dims[2]}">
         <origin xyz="link_origin" rpy="0 0 0"/>
     </xacro:inertial_box>
   </xacro:macro>
