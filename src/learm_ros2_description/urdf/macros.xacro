@@ -60,7 +60,7 @@
       <xacro:mimic joint="grip_${side == 'left' ? 'right' : 'left'}" multiplier="${side == 'left' ? '-1' : '1'}"/>
     </joint>
     <link name="grip_${side}_link">
-      <xacro:visual_collision_inertial_box size="${side == 'left' ? '2.8 0.5 5' : '-2.8 0.5 5'}" mass="1"/>
+      <xacro:visual_collision_inertial_box link_dims="${side == 'left' ? '2.8 0.5 5' : '-2.8 0.5 5'}" mass="1" link_origin="0 0 3" color="orange"/>
     </link>
   </xacro:macro>
 
@@ -75,7 +75,7 @@
       <xacro:mimic joint="grip_left" multiplier="${side == 'left' ? '1' : '-1'}"/>
     </joint>
     <link name="tendon_${side}_link">
-      <xacro:visual_collision_inertial_cylinder radius="0.25" length="3.8" mass="1"/>
+      <xacro:visual_collision_inertial_cylinder radius="0.25" length="3.8" mass="1" link_origin="0 0 5" color="orange"/>
     </link>
   </xacro:macro>
 
@@ -90,7 +90,7 @@
       <xacro:mimic joint="grip_left" multiplier="${side == 'left' ? '-1' : '1'}"/>
     </joint>
     <link name="finger_${side}_link">
-      <xacro:visual_collision_inertial_box size="${side == 'left' ? '2 0.5 6.2' : '-2 0.5 6.2'}" mass="1"/>
+      <xacro:visual_collision_inertial_box link_dims="${side == 'left' ? '2 0.5 6.2' : '-2 0.5 6.2'}" mass="1" link_origin="${side == 'left' ? '0.5 0 3' : '-0.5 0 3'}" color="red"/>
     </link>
   </xacro:macro>
 
@@ -134,29 +134,33 @@
   </xacro:macro>
 
   <!-- Macro for defining visual, collision, and inertial properties of a cylinder -->
-  <xacro:macro name="visual_collision_inertial_cylinder" params="radius length mass">
+  <xacro:macro name="visual_collision_inertial_cylinder" params="radius length mass link_origin color">
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="${link_origin}" rpy="0 0 0"/>
       <geometry>
         <cylinder radius="${radius}" length="${length}" />
       </geometry>
-      <material name="orange"/>
+      <material name="${color}"/>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="${link_origin}" rpy="0 0 0"/>
       <geometry>
         <cylinder radius="${radius}" length="${length}" />
       </geometry>
     </collision>
-    <xacro:inertial_cylinder mass="${mass}" radius="${radius}" length="${length}"/>
+    <xacro:inertial_cylinder mass="${mass}" length="${length}" radius="${radius}">
+        <origin xyz="${link_origin}" rpy="0 0 0"/>
+    </xacro:inertial_cylinder>
   </xacro:macro>
 
   <!-- Macro for defining inertial properties of a cylinder -->
-  <xacro:macro name="inertial_cylinder" params="mass radius length">
+  <xacro:macro name="inertial_cylinder" params="mass length radius *origin">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="${mass}"/>
-      <inertia ixx="${0.083333*mass*(3*radius**2+length**2)}" ixy="0" ixz="0" iyy="${0.083333*mass*(3*radius**2+length**2)}" iyz="0" izz="${0.5*mass*radius**2}"/>
+        <xacro:insert_block name="origin"/>
+        <mass value="${mass}" />
+        <inertia ixx="${(1/12) * mass * (3*radius*radius + length*length)}" ixy="0.0" ixz="0.0"
+                iyy="${(1/12) * mass * (3*radius*radius + length*length)}" iyz="0.0"
+                izz="${(1/2) * mass * (radius*radius)}" />
     </inertial>
   </xacro:macro>
 
