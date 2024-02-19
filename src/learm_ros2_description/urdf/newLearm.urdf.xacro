@@ -154,20 +154,20 @@
 
     <link name="hand_link">
         <visual>
-            <origin xyz="0 -1.5 2" rpy="0 0 0"/>
+            <origin xyz="1.5 -1.5 2" rpy="0 0 0"/>
             <geometry>
-                <box size="5.5 5 4" />
+                <box size="5 5.5 4" />
             </geometry>
             <material name="blue" />
         </visual>
         <collision>
-            <origin xyz="0 -1.5 2" rpy="0 0 0"/>
+            <origin xyz="1.5 -1.5 2" rpy="0 0 0"/>
             <geometry>
-                <box size="5.5 5 4" />
+                <box size="5 5.5 4" />
             </geometry>
         </collision>
-        <xacro:inertial_box mass="200" x="5.5" y="5" z="4">
-            <origin xyz="0 -1.5 2" rpy="0 0 0"/>
+        <xacro:inertial_box mass="200" x="5" y="5.5" z="4">
+            <origin xyz="1.5 -1.5 2" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
 
@@ -175,16 +175,16 @@
     <joint name="grip_left" type="revolute">
         <parent link="hand_link"/>
         <child link="grip_left_link"/>
-        <origin xyz="-1.5 0 3" rpy="0 -1.57 0"/>
-        <axis xyz="0 -1 0"/>
+        <origin xyz="0 0 3" rpy="-1.57 0 0"/>
+        <axis xyz="-1 0 0"/>
         <limit lower="-1.57" upper="0" effort="1000" velocity="0.5"/>
     </joint>
 
     <joint name="grip_right" type="revolute">
         <parent link="hand_link"/>
         <child link="grip_right_link"/>
-        <origin xyz="1.5 0 3" rpy="0 1.57 0"/>
-        <axis xyz="0 -1 0"/>
+        <origin xyz="0 -3 3" rpy="1.57 0 0"/>
+        <axis xyz="-1 0 0"/>
         <limit lower="0" upper="1.57" effort="1000" velocity="0.5"/>
         <mimic joint="grip_left" multiplier="-1"/>
     </joint>
@@ -193,17 +193,17 @@
         <visual>
             <origin xyz="0 0 3" rpy="0 0 0"/>
             <geometry>
-                <box size="2.8 0.5 5" />
+                <box size="0.5 -2.8 5" />
             </geometry>
             <material name="orange" />
         </visual>
         <collision>
             <origin xyz="0 0 3" rpy="0 0 0"/>
             <geometry>
-                <box size="2.8 0.5 5" />
+                <box size="0.5 -2.8 5" />
             </geometry>
         </collision>
-        <xacro:inertial_box mass="1" x="2.8" y="0.5" z="5">
+        <xacro:inertial_box mass="1" x="0.5" y="-2.8" z="5">
             <origin xyz="0 0 3" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
@@ -212,17 +212,17 @@
         <visual>
             <origin xyz="0 0 3" rpy="0 0 0"/>
             <geometry>
-                <box size="-2.8 0.5 5" />
+                <box size="0.5 2.8 5" />
             </geometry>
             <material name="orange" />
         </visual>
         <collision>
             <origin xyz="0 0 3" rpy="0 0 0"/>
             <geometry>
-                <box size="-2.8 0.5 5" />
+                <box size="0.5 2.8 5" />
             </geometry>
         </collision>
-        <xacro:inertial_box mass="1" x="-2.8" y="0.5" z="5">
+        <xacro:inertial_box mass="1" x="0.5" y="2.8" z="5">
             <origin xyz="0 0 3" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
@@ -231,8 +231,8 @@
     <joint name="tendon_left" type="revolute">
         <parent link="hand_link"/>
         <child link="tendon_left_link"/>
-        <origin xyz="-0.5 0 5" rpy="0 -1.57 0"/>
-        <axis xyz="0 -1 0"/>
+        <origin xyz="0 -2 5" rpy="1.57 0 0"/>
+        <axis xyz="1 0 0"/>
         <limit lower="-1.57" upper="0" effort="1000" velocity="0.5"/>
         <mimic joint="grip_left"/>
     </joint>
@@ -240,8 +240,8 @@
     <joint name="tendon_right" type="revolute">
         <parent link="hand_link"/>
         <child link="tendon_right_link"/>
-        <origin xyz="0.5 0 5" rpy="0 1.57 0"/>
-        <axis xyz="0 -1 0"/>
+        <origin xyz="0 -1 5" rpy="-1.57 0 0"/>
+        <axis xyz="1 0 0"/>
         <limit lower="0" upper="1.57" effort="1000" velocity="0.5"/>
         <mimic joint="grip_left" multiplier="-1"/>
     </joint>
@@ -288,55 +288,55 @@
     <joint name="finger_left" type="revolute">
         <parent link="grip_left_link"/>
         <child link="finger_left_link"/>
-        <origin xyz="0 0 5.5" rpy="0 1.57 0"/>
-        <axis xyz="0 -1 0"/>
+        <origin xyz="0 0 5.5" rpy="1.57 0 0"/>
+        <axis xyz="-1 0 0"/>
         <limit lower="-1.57" upper="0" effort="1000" velocity="0.5"/>
         <mimic joint="grip_left" multiplier="-1"/>
     </joint>
     <joint name="finger_right" type="revolute">
         <parent link="grip_right_link"/>
         <child link="finger_right_link"/>
-        <origin xyz="0 0 5.5" rpy="0 -1.57 0"/>
-        <axis xyz="0 -1 0"/>
+        <origin xyz="0 0 5.5" rpy="-1.57 0 0"/>
+        <axis xyz="-1 0 0"/>
         <limit lower="0" upper="1.57" effort="1000" velocity="0.5"/>
         <mimic joint="grip_left"/>
     </joint>
 
     <link name="finger_left_link">
         <visual>
-            <origin xyz="0.5 0 3" rpy="0 0 0"/>
+            <origin xyz="0 -0.5 3" rpy="0 0 0"/>
             <geometry>
-                <box size="2 0.5 6.2" />
+                <box size="0.5 2 6.2" />
             </geometry>
             <material name="red" />
         </visual>
         <collision>
-            <origin xyz="0.5 0 3" rpy="0 0 0"/>
+            <origin xyz="0 -0.5 3" rpy="0 0 0"/>
             <geometry>
-                <box size="2 0.5 6.2" />
+                <box size="0.5 2 6.2" />
             </geometry>
         </collision>
-        <xacro:inertial_box mass="1" x="2" y="0.5" z="6.2">
-            <origin xyz="0.5 0 3" rpy="0 0 0"/>
+        <xacro:inertial_box mass="1" x="0.5" y="2" z="6.2">
+            <origin xyz="0 -0.5 3" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
 
     <link name="finger_right_link">
         <visual>
-            <origin xyz="-0.5 0 3" rpy="0 0 0"/>
+            <origin xyz="0 0.5 3" rpy="0 0 0"/>
             <geometry>
-                <box size="-2 0.5 6.2" />
+                <box size="0.5 -2 6.2" />
             </geometry>
             <material name="red" />
         </visual>
         <collision>
-            <origin xyz="-0.5 0 3" rpy="0 0 0"/>
+            <origin xyz="0 0.5 3" rpy="0 0 0"/>
             <geometry>
-                <box size="-2 0.5 6.2" />
+                <box size="0.5 -2 6.2" />
             </geometry>
         </collision>
-        <xacro:inertial_box mass="1" x="-2" y="0.5" z="6.2">
-            <origin xyz="-0.5 0 3" rpy="0 0 0"/>
+        <xacro:inertial_box mass="1" x="0.5" y="-2" z="6.2">
+            <origin xyz="0 0.5 3" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
 
