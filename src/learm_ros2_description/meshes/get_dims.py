@@ -1,10 +1,9 @@
 """
 Author: Leopold Klotz
-Location for running: learm_ws/src/get_dims.py
+Location for running: learm_ws/src/learm_ros2_description/meshes
 Purpose: Calculate the bounding box dimensions of STL files
 This file was used to get dimensions for the inertial properties of the URDF
 """
-
 
 from stl import mesh
 import numpy as np
@@ -20,7 +19,7 @@ def calculate_bounding_box(stl_filename):
     return bounding_box_dimensions
 
 if __name__ == "__main__":
-    prepath = "learm_ros2_description/meshes/"
+    prepath = ""
     filenames = [
         "base.stl",
         "shoulder.stl",
