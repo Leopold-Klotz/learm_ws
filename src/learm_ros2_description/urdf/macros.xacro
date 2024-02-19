@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- colors -->
+    <material name="white">
+        <color rgba="1 1 1 1"/>
+    </material>
+
+    <material name="orange">
+        <color rgba="1 0.3 0.1 1"/>
+    </material>
+
+    <material name="blue">
+        <color rgba="0.2 0.2 1 1"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0 0 0 0.91"/>
+    </material>
+
+    <material name="red">
+        <color rgba="1 0 0 1"/>
+    </material>
+
+
+  <!-- Macro for defining a joint and link -->
+  <xacro:macro name="joint_link" params="name parent child joint_origin axis lower upper velocity effort link_dims mass link_origin color">
+    <joint name="${name}" type="revolute">
+      <origin xyz="${joint_origin}" rpy="0 0 0"/>
+      <parent link="${parent}"/>
+      <child link="${child}"/>
+      <axis xyz="${axis}"/>
+      <limit lower="${lower}" upper="${upper}" velocity="${velocity}" effort="${effort}"/> 
+    </joint>
+    <link name="${child}">
+      <xacro:visual_collision_inertial_box link_dims="${link_dims}" mass="${mass}" link_origin="${link_origin}" color="${color}"/>
+    </link>
+  </xacro:macro>
+
+  <!-- Macro for defining a joint and link for the base -->
+  <xacro:macro name="base_joint_link">
+    <joint name="base_joint" type="fixed">
+      <origin xyz="1.5 1.0 0" rpy="0 0 0"/>
+      <parent link="world"/>
+      <child link="base_link"/>        
+    </joint>
+    <link name="base_link">
+      <xacro:visual_collision_inertial_box link_dims="16 29 7" mass="500" link_origin="0 0 3.5" color="green"/>
+    </link>
+  </xacro:macro>
+
+  <!-- Macro for defining grip joint and link -->
+  <xacro:macro name="grip_joint_link" params="side">
+    <joint name="grip_${side}" type="revolute">
+      <origin xyz="${side == 'left' ? '-1.5' : '1.5'} 0 3" rpy="0 ${side == 'left' ? '-1.57' : '1.57'} 0"/>
+      <parent link="hand_link"/>
+      <child link="grip_${side}_link"/>
+      <axis xyz="0 -1 0"/>
+      <limit lower="${side == 'left' ? '-1.57' : '0'}" upper="${side == 'left' ? '0' : '1.57'}" effort="1000" velocity="0.5"/>
+      <xacro:mimic joint="grip_${side == 'left' ? 'right' : 'left'}" multiplier="${side == 'left' ? '-1' : '1'}"/>
+    </joint>
+    <link name="grip_${side}_link">
+      <xacro:visual_collision_inertial_box size="${side == 'left' ? '2.8 0.5 5' : '-2.8 0.5 5'}" mass="1"/>
+    </link>
+  </xacro:macro>
+
+  <!-- Macro for defining tendon joint and link -->
+  <xacro:macro name="tendon_joint_link" params="side">
+    <joint name="tendon_${side}" type="revolute">
+      <origin xyz="${side == 'left' ? '-0.5' : '0.5'} 0 5" rpy="0 ${side == 'left' ? '-1.57' : '1.57'} 0"/>
+      <parent link="hand_link"/>
+      <child link="tendon_${side}_link"/>
+      <axis xyz="0 -1 0"/>
+      <limit lower="${side == 'left' ? '-1.57' : '0'}" upper="${side == 'left' ? '0' : '1.57'}" effort="1000" velocity="0.5"/>
+      <xacro:mimic joint="grip_left" multiplier="${side == 'left' ? '1' : '-1'}"/>
+    </joint>
+    <link name="tendon_${side}_link">
+      <xacro:visual_collision_inertial_cylinder radius="0.25" length="3.8" mass="1"/>
+    </link>
+  </xacro:macro>
+
+  <!-- Macro for defining finger joint and link -->
+  <xacro:macro name="finger_joint_link" params="side">
+    <joint name="finger_${side}" type="revolute">
+      <origin xyz="0 0 5.5" rpy="0 ${side == 'left' ? '1.57' : '-1.57'} 0"/>
+      <parent link="grip_${side}_link"/>
+      <child link="finger_${side}_link"/>
+      <axis xyz="0 -1 0"/>
+      <limit lower="${side == 'left' ? '-1.57' : '0'}" upper="${side == 'left' ? '0' : '1.57'}" effort="1000" velocity="0.5"/>
+      <xacro:mimic joint="grip_left" multiplier="${side == 'left' ? '-1' : '1'}"/>
+    </joint>
+    <link name="finger_${side}_link">
+      <xacro:visual_collision_inertial_box size="${side == 'left' ? '2 0.5 6.2' : '-2 0.5 6.2'}" mass="1"/>
+    </link>
+  </xacro:macro>
+
+  <!-- Macro for defining visual, collision, and inertial properties of a link -->
+  <xacro:macro name="visual_collision_inertial_box" params="link_dims mass link_origin color">
+    <visual>
+      <origin xyz="${link_origin}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${link_dims}" />
+      </geometry>
+      <material name="${color}"/>
+    </visual>
+    <collision>
+      <origin xyz="${link_origin}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${link_dims}" />
+      </geometry>
+    </collision>
+
+    <!-- Split the link_dims string into a list of numbers -->
+    <xacro:property name="dims_list" value="xacro:split(string(${link_dims}), ' ')" />
+
+    <!-- Extract individual components (x, y, z) -->
+    <xacro:property name="x" value="${dims_list[0]}" />
+    <xacro:property name="y" value="${dims_list[1]}" />
+    <xacro:property name="z" value="${dims_list[2]}" />
+
+    <xacro:inertial_box mass="${mass}" x="${x}" y="${y}" z="${z}">
+        <origin xyz="link_origin" rpy="0 0 0"/>
+    </xacro:inertial_box>
+  </xacro:macro>
+
+  <xacro:macro name="inertial_box" params="mass x y z *origin">
+    <inertial>
+        <xacro:insert_block name="origin"/>
+        <mass value="${mass}" />
+        <inertia ixx="${(1/12) * mass * (y*y+z*z)}" ixy="0.0" ixz="0.0"
+                iyy="${(1/12) * mass * (x*x+z*z)}" iyz="0.0"
+                izz="${(1/12) * mass * (x*x+y*y)}" />
+    </inertial>
+  </xacro:macro>
+
+  <!-- Macro for defining visual, collision, and inertial properties of a cylinder -->
+  <xacro:macro name="visual_collision_inertial_cylinder" params="radius length mass">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${radius}" length="${length}" />
+      </geometry>
+      <material name="orange"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${radius}" length="${length}" />
+      </geometry>
+    </collision>
+    <xacro:inertial_cylinder mass="${mass}" radius="${radius}" length="${length}"/>
+  </xacro:macro>
+
+  <!-- Macro for defining inertial properties of a cylinder -->
+  <xacro:macro name="inertial_cylinder" params="mass radius length">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="${mass}"/>
+      <inertia ixx="${0.083333*mass*(3*radius**2+length**2)}" ixy="0" ixz="0" iyy="${0.083333*mass*(3*radius**2+length**2)}" iyz="0" izz="${0.5*mass*radius**2}"/>
+    </inertial>
+  </xacro:macro>
+
+</robot>
