@@ -9,7 +9,16 @@
       <geometry>
         <mesh filename="package://learm_ros2_description/meshes/base.stl"/>
       </geometry>
+      <material name="black"/>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://learm_ros2_description/meshes/base.stl"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="500" x="0.28291523" y="0.16" z="0.0795">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
   </link>
 
   <joint name="shoulder_pan" type="revolute">
@@ -25,7 +34,16 @@
       <geometry>
         <mesh filename="package://learm_ros2_description/meshes/shoulder.stl"/>
       </geometry>
+      <material name="green"/>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://learm_ros2_description/meshes/shoulder.stl"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="50" x="0.08100046" y="0.081" z="0.03901956">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
   </link>
 
   <joint name="shoulder_lift" type="revolute">
@@ -41,7 +59,16 @@
       <geometry>
         <mesh filename="package://learm_ros2_description/meshes/humerus.stl"/>
       </geometry>
+      <material name="blue"/>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://learm_ros2_description/meshes/humerus.stl"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="200" x="0.025" y="0.056" z="0.12900001">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
   </link>
 
   <joint name="elbow" type="revolute">
@@ -57,7 +84,16 @@
       <geometry>
         <mesh filename="package://learm_ros2_description/meshes/forearm.stl"/>
       </geometry>
+      <material name="blue"/>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://learm_ros2_description/meshes/forearm.stl"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="200" x="0.025" y="0.056" z="0.11098956">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
   </link>
 
   <joint name="wrist_flex" type="revolute">
@@ -73,7 +109,16 @@
       <geometry>
         <mesh filename="package://learm_ros2_description/meshes/wrist.stl"/>
       </geometry>
+      <material name="blue"/>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://learm_ros2_description/meshes/wrist.stl"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="200" x="0.0583" y="0.0456" z="0.0711">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
   </link>
 
   <joint name="wrist_roll" type="revolute">
@@ -89,7 +134,16 @@
       <geometry>
         <mesh filename="package://learm_ros2_description/meshes/hand.stl"/>
       </geometry>
+      <material name="black"/>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://learm_ros2_description/meshes/hand.stl"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="200" x="0.05439999" y="0.05563842" z="0.056">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
   </link>
 
   <!-- Gripper specific links: -->
@@ -98,43 +152,103 @@
       <geometry>
         <mesh filename="package://learm_ros2_description/meshes/carpal-left.stl"/>
       </geometry>
+      <material name="orange"/>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://learm_ros2_description/meshes/carpal-left.stl"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="10" x="0.003" y="0.02781075" z="0.04949519">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
   </link>
+
   <link name="grip_right_link">
     <visual>
       <geometry>
         <mesh filename="package://learm_ros2_description/meshes/carpal-right.stl"/>
       </geometry>
+      <material name="orange"/>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://learm_ros2_description/meshes/carpal-right.stl"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="10" x="0.00824992" y="0.02793942" z="0.04944835">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
   </link>
+
   <link name="tendon_left_link">
     <visual>
       <geometry>
         <mesh filename="package://learm_ros2_description/meshes/tendon.stl"/>
       </geometry>
+      <material name="orange"/>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://learm_ros2_description/meshes/tendon.stl"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="5" x="0.012" y="0.00710179" z="0.03599977">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
   </link>
+
   <link name="tendon_right_link">
     <visual>
       <geometry>
         <mesh filename="package://learm_ros2_description/meshes/tendon.stl"/>
       </geometry>
+      <material name="orange"/>
     </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://learm_ros2_description/meshes/tendon.stl"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="5" x="0.012" y="0.00710179" z="0.03599977">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
   </link>
+
   <link name="finger_left_link">
     <visual>
       <geometry>
         <mesh filename="package://learm_ros2_description/meshes/finger.stl"/>
       </geometry>
+      <material name="red"/>
     </visual>
-  </link>
-  <link name="finger_right_link">
-    <visual>
-      <origin rpy="0 0 3.14159"/>
+    <collision>
       <geometry>
         <mesh filename="package://learm_ros2_description/meshes/finger.stl"/>
       </geometry>
+    </collision>
+    <xacro:inertial_box mass="10" x="0.006" y="0.02043952" z="0.05933856">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
+  </link>
+
+  <link name="finger_right_link">
+    <visual>
+      <origin rpy="0 0 ${pi}"/>
+      <geometry>
+        <mesh filename="package://learm_ros2_description/meshes/finger.stl"/>
+      </geometry>
+      <material name="red"/>
     </visual>
+    <collision>
+      <origin rpy="0 0 ${pi}"/>
+      <geometry>
+        <mesh filename="package://learm_ros2_description/meshes/finger.stl"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="10" x="0.006" y="0.02043952" z="0.05933856">
+      <origin xyz="0 0 ${pi}" rpy="0 0 0"/>
+    </xacro:inertial_box>
   </link>
 
   <!-- Gripper specific joints: -->

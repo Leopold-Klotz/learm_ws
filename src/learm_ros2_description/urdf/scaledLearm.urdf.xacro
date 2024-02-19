@@ -15,15 +15,16 @@
 
     <link name="base_link">
         <visual>
-            <origin xyz="0 0 0.035" rpy="0 0 0"/>
+            <origin xyz="0 0.07 0" rpy="0 0 ${pi/2}"/>
             <geometry>
                 <mesh filename="package://learm_ros2_description/meshes/base.stl"/>
             </geometry>
+            <material name="black" />
         </visual>
         <collision>
-            <origin xyz="0 0 0.035" rpy="0 0 0"/>
+            <origin xyz="0 0.07 0" rpy="0 0 ${pi/2}"/>
             <geometry>
-                <box size="0.16 0.29 0.07" />
+                <mesh filename="package://learm_ros2_description/meshes/base.stl"/>
             </geometry>
         </collision>
         <xacro:inertial_box mass="500" x="0.16" y="0.29" z="0.07">
@@ -41,15 +42,16 @@
 
     <link name="shoulder_link">
         <visual>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="0 0 ${-pi/2}"/>
             <geometry>
                 <mesh filename="package://learm_ros2_description/meshes/shoulder.stl"/>
             </geometry>
+            <material name="green" />
         </visual>
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="0 0 ${-pi/2}"/>
             <geometry>
-                <box size="0.042 0.041 0.022" />
+                <mesh filename="package://learm_ros2_description/meshes/shoulder.stl"/>
             </geometry>
         </collision>
         <xacro:inertial_box mass="50" x="0.042" y="0.041" z="0.022">
@@ -67,15 +69,16 @@
 
     <link name="humerus_link">
         <visual>
-            <origin xyz="0 0.015 0.07" rpy="0 0 0"/>
+            <origin xyz="0 0.015 0.07" rpy="0 0 ${pi/2}"/>
             <geometry>
                 <mesh filename="package://learm_ros2_description/meshes/humerus.stl"/>
             </geometry>
+            <material name="blue" />
         </visual>
         <collision>
-            <origin xyz="0 0.015 0.07" rpy="0 0 0"/>
+            <origin xyz="0 0.015 0.07" rpy="0 0 ${pi/2}"/>
             <geometry>
-                <box size="0.055 0.03 0.13" />
+                <mesh filename="package://learm_ros2_description/meshes/humerus.stl"/>
             </geometry>
         </collision>
         <xacro:inertial_box mass="200" x="0.055" y="0.03" z="0.13">
@@ -93,15 +96,16 @@
 
     <link name="forearm_link">
         <visual>
-            <origin xyz="0 0 0.055" rpy="0 0 0"/>
+            <origin xyz="0 0 0.055" rpy="0 0 ${pi/2}"/>
             <geometry>
                 <mesh filename="package://learm_ros2_description/meshes/forearm.stl"/>
             </geometry>
+            <material name="blue" />
         </visual>
         <collision>
-            <origin xyz="0 0 0.055" rpy="0 0 0"/>
+            <origin xyz="0 0 0.055" rpy="0 0 ${pi/2}"/>
             <geometry>
-                <box size="0.055 0.03 0.11" />
+                <mesh filename="package://learm_ros2_description/meshes/forearm.stl"/>
             </geometry>
         </collision>
         <xacro:inertial_box mass="200" x="0.055" y="0.03" z="0.11">
@@ -123,6 +127,7 @@
             <geometry>
                 <mesh filename="package://learm_ros2_description/meshes/wrist.stl"/>
             </geometry>
+            <material name="blue" />
         </visual>
         <collision>
             <origin xyz="0 0.015 0.0325" rpy="0 0 0"/>
@@ -149,6 +154,7 @@
             <geometry>
                 <mesh filename="package://learm_ros2_description/meshes/hand.stl"/>
             </geometry>
+            <material name="black" />
         </visual>
         <collision>
             <origin xyz="0.015 -0.015 0.02" rpy="0 0 0"/>
@@ -185,6 +191,7 @@
             <geometry>
                 <mesh filename="package://learm_ros2_description/meshes/carpal-left.stl"/>
             </geometry>
+            <material name="orange" />
         </visual>
         <collision>
             <origin xyz="0 0 0.03" rpy="0 0 0"/>
@@ -203,6 +210,7 @@
             <geometry>
                 <mesh filename="package://learm_ros2_description/meshes/carpal-right.stl"/>
             </geometry>
+            <material name="orange" />
         </visual>
         <collision>
             <origin xyz="0 0 0.03" rpy="0 0 0"/>
@@ -240,6 +248,7 @@
             <geometry>
                 <mesh filename="package://learm_ros2_description/meshes/tendon.stl"/>
             </geometry>
+            <material name="orange" />
         </visual>
         <collision>
             <origin xyz="0 0 0.05" rpy="0 0 0"/>
@@ -296,6 +305,7 @@
             <geometry>
                 <mesh filename="package://learm_ros2_description/meshes/finger.stl"/>
             </geometry>
+            <material name="red" />
         </visual>
         <collision>
             <origin xyz="0 -0.005 0.03" rpy="0 0 0"/>
@@ -314,6 +324,7 @@
             <geometry>
                 <mesh filename="package://learm_ros2_description/meshes/finger.stl"/>
             </geometry>
+            <material name="red" />
         </visual>
         <collision>
             <origin xyz="0 0.005 0.03" rpy="0 0 0"/>
