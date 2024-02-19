@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="learm">
 
   <!-- Include some basic inertial shapes for reuse. -->
-  <xacro:include filename="example_include.xacro" />
+  <xacro:include filename="macros.xacro" />
 
   <link name="base_link">
     <visual>
