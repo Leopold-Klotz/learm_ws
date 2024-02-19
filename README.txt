@@ -1,8 +1,9 @@
 Author: Leopold Klotz
 
 Credit:
-- learm_ros2, learm_ros2_description, and learm_ros2_moveit_config packages were all taken from Andrew Dassonville's learm_ros2 repository.
-- The learm_ros2 repository was used as a starting point for this project but has been modified and expanded upon.
+- learm_ros2, learm_ros2_description were initially created by Andrew Dassonville in his learm_ros2 package: https://github.com/andrewda/learm_ros2
+- The learm_ros2_description package was modified by Leopold Klotz to correct and expand the URDF model of the robot arm
+- The moveit configuration was created by Leopold Klotz using the moveit setup assistant
 
 To build the project:
     - cd learm_ws
