@@ -13,4 +13,4 @@ colcon build
 source ~/learm_ws/install/setup.bash
 
 # Launch the package
-ros2 launch learm_ros2 run.launch.py
+ros2 launch learm_moveit_config demo.launch.py

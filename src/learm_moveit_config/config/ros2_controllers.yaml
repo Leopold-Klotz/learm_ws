@@ -27,6 +27,7 @@ learm_arm_controller:
     state_interfaces:
       - position
       - velocity
+      
 hand_controller:
   ros__parameters:
     joint: grip_left
