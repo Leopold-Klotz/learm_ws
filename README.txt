@@ -28,4 +28,12 @@ To run the follower node:
     - source install/setup.bash
     - ros2 run learm_ros2 follower.launch.py
 
+
+
+When installing the package to a new computer:
+- sudo rosdep init
+- rosdep update
+- cd learm_ws
+- rosdep install --from-paths src -y --ignore-src
+
     
