@@ -36,6 +36,11 @@ Connecting LeArm to WSL2 running Ubuntu and ROS2:
         - usbipd bind --busid 2-10 # or whatever busid is listed, only needs to be done first time
         - usbipd attach --wsl --busid 2-10 # needs to be done every time you plug in or turn on arm
     - In a WSL2 terminal, ensure the proper udev rules are set: https://www.clearpathrobotics.com/assets/guides/kinetic/ros/Udev%20Rules.html
+        - need to add new udev rule:
+        - vim 99-ros-rule.rules
+        - copy into file: SUBSYSTEM=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="5750", MODE="0660", GROUP="plugdev"
+        - sudo cp 99-ros-rule.rules /etc/udev/rules.d/
+        - sudo udevadm control --reload-rules && sudo udevadm trigger
     - Should be accessable and connected within WSL2.
 
 
