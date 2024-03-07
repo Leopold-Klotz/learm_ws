@@ -146,6 +146,10 @@
     </xacro:inertial_box>
   </link>
 
+  <!-- camera on hand! -->
+
+  <xacro:include filename="camera.xacro" />
+
   <!-- Gripper specific links: -->
   <link name="grip_left_link">
     <visual>
