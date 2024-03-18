@@ -1,8 +1,9 @@
 Author: Leopold Klotz
 
 Credit:
-- learm_ros2, learm_ros2_description, and learm_ros2_moveit_config packages were all taken from Andrew Dassonville's learm_ros2 repository.
-- The learm_ros2 repository was used as a starting point for this project but has been modified and expanded upon.
+- learm_ros2, learm_ros2_description were initially created by Andrew Dassonville in his learm_ros2 package: https://github.com/andrewda/learm_ros2
+- The learm_ros2_description package was modified by Leopold Klotz to correct and expand the URDF model of the robot arm
+- The moveit configuration was created by Leopold Klotz using the moveit setup assistant
 
 To build the project:
     - cd learm_ws
@@ -28,7 +29,18 @@ To run the follower node:
     - source install/setup.bash
     - ros2 run learm_ros2 follower.launch.py
 
-
+Connecting LeArm to WSL2 running Ubuntu and ROS2:
+    - In a Powershell terminal, attach the usb: https://learn.microsoft.com/en-us/windows/wsl/connect-usb
+        - usbipd list
+        - usbipd bind --busid 2-10 # or whatever busid is listed, only needs to be done first time
+        - usbipd attach --wsl --busid 2-10 # needs to be done every time you plug in or turn on arm
+    - In a WSL2 terminal, ensure the proper udev rules are set: https://www.clearpathrobotics.com/assets/guides/kinetic/ros/Udev%20Rules.html
+        - need to add new udev rule:
+        - vim 99-ros-rule.rules
+        - copy into file: SUBSYSTEM=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="5750", MODE="0660", GROUP="plugdev"
+        - sudo cp 99-ros-rule.rules /etc/udev/rules.d/
+        - sudo udevadm control --reload-rules && sudo udevadm trigger
+    - Should be accessable and connected within WSL2.
 
 When installing the package to a new computer:
 - sudo rosdep init
