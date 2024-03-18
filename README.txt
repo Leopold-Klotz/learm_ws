@@ -29,7 +29,6 @@ To run the follower node:
     - source install/setup.bash
     - ros2 run learm_ros2 follower.launch.py
 
-
 Connecting LeArm to WSL2 running Ubuntu and ROS2:
     - In a Powershell terminal, attach the usb: https://learn.microsoft.com/en-us/windows/wsl/connect-usb
         - usbipd list
@@ -43,6 +42,10 @@ Connecting LeArm to WSL2 running Ubuntu and ROS2:
         - sudo udevadm control --reload-rules && sudo udevadm trigger
     - Should be accessable and connected within WSL2.
 
-
+When installing the package to a new computer:
+- sudo rosdep init
+- rosdep update
+- cd learm_ws
+- rosdep install --from-paths src -y --ignore-src
 
     
